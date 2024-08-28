@@ -1203,6 +1203,18 @@ html{
   justify-content: flex-end;
 }
 
+.progress{
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .stats{
   display: inline-grid;
   border-radius: var(--rounded-box, 1rem);
@@ -1521,6 +1533,51 @@ html{
   0%{
     opacity: 0;
   }
+}
+
+.progress::-moz-progress-bar{
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate{
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar{
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value{
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate::-moz-progress-bar{
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
 }
 
 @keyframes progress-loading{
@@ -1843,6 +1900,14 @@ html{
   grid-column: span 3 / span 3;
 }
 
+.col-span-12{
+  grid-column: span 12 / span 12;
+}
+
+.col-span-9{
+  grid-column: span 9 / span 9;
+}
+
 .col-start-3{
   grid-column-start: 3;
 }
@@ -1853,6 +1918,10 @@ html{
 
 .col-start-8{
   grid-column-start: 8;
+}
+
+.col-start-4{
+  grid-column-start: 4;
 }
 
 .col-end-11{
@@ -1869,6 +1938,10 @@ html{
 
 .col-end-6{
   grid-column-end: 6;
+}
+
+.col-end-10{
+  grid-column-end: 10;
 }
 
 .mx-auto{
@@ -1941,6 +2014,10 @@ html{
   height: 2.5rem;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1975,6 +2052,14 @@ html{
 
 .w-10{
   width: 2.5rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-sm{
@@ -2019,6 +2104,10 @@ html{
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-y-6{
@@ -2069,6 +2158,10 @@ html{
   border-width: 1px;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-slate-50{
   --tw-border-opacity: 1;
   border-color: rgb(248 250 252 / var(--tw-border-opacity));
@@ -2097,6 +2190,11 @@ html{
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-slate-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .bg-base-100{
@@ -2162,6 +2260,45 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-rose-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 164 175 / var(--tw-bg-opacity));
+}
+
+.bg-pink-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E7C1D3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 193 211 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EFDA6E\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 218 110 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#77AAEA\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 170 234 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#A4DAC3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 218 195 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2176,6 +2313,10 @@ html{
 
 .p-8{
   padding: 2rem;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .px-1{
@@ -2238,6 +2379,11 @@ html{
   padding-right: 0.75rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -2248,6 +2394,10 @@ html{
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
 }
 
 .text-center{
@@ -2345,6 +2495,12 @@ html{
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
