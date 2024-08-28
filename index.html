@@ -1,12 +1,520 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
     <link rel="stylesheet" href="public/styles.css" />
   </head>
-  <body>
-    <h1 class="btn btn-warning">Hello</h1>
+  <body class="font-manrope bg-stone-100">
+    <!-- Header container -->
+    <header class="container mx-auto">
+      <!-- navbar -->
+      <nav class="py-10">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <div
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <ul>
+                  <li>
+                    <a
+                      class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                      href=""
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                      href=""
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                      href=""
+                      >Blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                      href=""
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+                <button
+                  class="btn btn-ghost btn-circle border border-gray-200 hover:bg-neon-green hover:border-neon-green"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-ghost btn-circle border border-gray-200 hover:bg-neon-green hover:border-neon-green"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                </button>
+                <a
+                  class="btn bg-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
+                >
+                  <span class="font-extrabold text-lg">Book Consult</span>
+                </a>
+              </div>
+            </div>
+            <a href="" class="flex gap-4 items-center justify-center">
+              <span
+                class="btn btn-circle bg-neon-green text-black hover:bg-neon-green"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+              <span class="text-mono text-5xl font-extrabold">Rinterio</span>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a
+                  class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                  href=""
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                  href=""
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                  href=""
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                  href=""
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-4">
+            <button
+              class="btn btn-ghost btn-circle bg-white border border-gray-200 hover:bg-neon-green hover:border-neon-green"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-ghost btn-circle bg-white border border-gray-200 hover:bg-neon-green hover:border-neon-green"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </button>
+            <a
+              class="btn bg-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
+            >
+              <span class="font-extrabold text-lg">Book Consult</span>
+              <span
+                class="btn btn-circle bg-black text-white hover:bg-neon-green hover:text-mono"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Container -->
+      <section class="grid grid-cols-12 pb-20">
+        <!-- Banner Content -->
+        <div
+          class="col-start-2 col-end-12 flex flex-col gap-y-6 items-center justify-center"
+        >
+          <!-- Banner Image -->
+          <img src="./public/images/banner.png" alt="" />
+          <!-- Banner Title -->
+          <h2 class="text-7xl font-black text-mono text-center">
+            A barn house of this design has a striking appearance
+          </h2>
+          <!-- Banner text -->
+          <p class="text-center text-accent font-medium w-4/5">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <!-- Banner Button -->
+          <div>
+            <a
+              class="btn bg-neon-green-light border border-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
+            >
+              <span class="font-extrabold text-lg">View Details</span>
+              <!-- Banner Button Inner Circle -->
+              <span
+                class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- About Us Container -->
+    <section class="bg-zinc-200 mx-auto py-20 px-5">
+      <div class="container mx-auto grid grid-cols-12 2xl:gap-10">
+        <!-- About Us Content -->
+        <div
+          class="lg:col-span-6 2xl:col-start-2 2xl:col-end-7 flex flex-col gap-5"
+        >
+          <!-- Top Arrow Image -->
+          <div class="relative">
+            <img
+              class="absolute -top-10 -left-14"
+              src="./public/images/wavy-arrow.png"
+              alt=""
+            />
+          </div>
+          <!-- Small About Us button -->
+          <div>
+            <a
+              class="btn bg-white border border-white pl-3 pr-4 h-auto rounded-full hover:bg-mono hover:text-white"
+            >
+              <span class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </span>
+              <span class="text-base font-medi">About Us</span>
+            </a>
+          </div>
+          <!-- About Us Title -->
+          <h2 class="text-5xl font-black text-mono font-manrope">
+            We design thoughtful, liveable spaces
+          </h2>
+          <!-- About Us text -->
+          <p class="text-accent font-medium">
+            The barn house captivates with its blend of rustic charm and <br />
+            modern sophistication, featuring weathered wood, sleek metal
+            accents.
+          </p>
+          <!-- About Us Box 1 -->
+          <div class="flex gap-5 items-center bg-white rounded-xl p-6 w-11/12">
+            <img src="./public/images/commercial.png" alt="" />
+            <div>
+              <h3 class="text-lg font-extrabold">Commercial</h3>
+              <p>
+                The barn house captivates with its blend <br />
+                of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+          <!-- About Us Box 2 -->
+          <div class="flex gap-5 items-center bg-white rounded-xl p-6 w-11/12">
+            <img src="./public/images/residential.png" alt="" />
+            <div>
+              <h3 class="text-lg font-extrabold">Residential</h3>
+              <p>
+                The barn house captivates with its blend <br />
+                of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- About Us Image -->
+        <div
+          class="lg:col-span-6 2xl:col-start-7 2xl:col-end-12 justify-self-center self-stretch"
+        >
+          <img src="./public/images/featured.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Statistic Container -->
+    <div class="container mx-auto py-20">
+      <div class="grid grid-cols-12 rounded-2xl bg-white p-8">
+        <!-- stat 1 -->
+        <div
+          class="col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+        >
+          <!-- stat icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="40"
+              viewBox="0 0 41 40"
+              fill="none"
+            >
+              <path
+                d="M13.8334 22.5001H27.1667M13.8334 14.1667H20.5"
+                stroke="#737373"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.6647 31.6667C8.49787 31.4536 6.87462 30.8027 5.78599 29.7141C3.83337 27.7616 3.83337 24.6187 3.83337 18.3334V17.5001C3.83337 11.2147 3.83337 8.072 5.78599 6.11936C7.73862 4.16675 10.8813 4.16675 17.1667 4.16675H23.8334C30.1187 4.16675 33.2615 4.16675 35.214 6.11936C37.1667 8.072 37.1667 11.2147 37.1667 17.5001V18.3334C37.1667 24.6187 37.1667 27.7616 35.214 29.7141C33.2615 31.6667 30.1187 31.6667 23.8334 31.6667C22.8992 31.6876 22.1552 31.7586 21.4244 31.9251C19.427 32.3849 17.5775 33.4069 15.7498 34.2982C13.1455 35.5681 11.8434 36.2031 11.0262 35.6086C9.46286 34.4442 10.9909 30.8366 11.3334 29.1667"
+                stroke="#737373"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <!-- stat count -->
+          <h4 class="text-4xl font-extrabold">235+</h4>
+          <!-- stat text -->
+          <p>Happy Client Review</p>
+        </div>
+        <!-- stat 2 -->
+        <div
+          class="col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+        >
+          <!-- stat icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="40"
+              viewBox="0 0 41 40"
+              fill="none"
+            >
+              <path
+                d="M35.5 23.1435L35.4998 15.2189C35.4988 13.3268 35.4983 12.3807 35.0383 11.5875C34.5783 10.7942 33.7573 10.331 32.1153 9.40457L23.74 4.67897C22.1563 3.78541 21.3645 3.33862 20.5 3.33862C19.6355 3.33862 18.8437 3.78541 17.26 4.67897L8.88467 9.40457C7.2427 10.331 6.42172 10.7942 5.96167 11.5875C5.5016 12.3807 5.50115 13.3268 5.50022 15.2189L5.5 23.1435C5.5 29.521 5.5 32.7096 7.45262 34.6908C9.40525 36.672 12.5479 36.672 18.8333 36.672H22.1667C28.452 36.672 31.5948 36.672 33.5473 34.6908C35.5 32.7096 35.5 29.521 35.5 23.1435Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.1666 21.672H13.8333M27.1666 21.672H23.8333M17.1666 15.0054H13.8333M17.1666 28.3387H13.8333M27.1666 15.0054H23.8333M27.1666 28.3387H23.8333"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <!-- stat count -->
+          <h4 class="text-4xl font-extrabold">50+</h4>
+          <!-- stat text -->
+          <p>Work Departments</p>
+        </div>
+        <!-- stat 3 -->
+        <div
+          class="col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+        >
+          <!-- stat icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="40"
+              viewBox="0 0 41 40"
+              fill="none"
+            >
+              <path
+                d="M35.1233 30.0041C36.3722 30.0041 37.3655 29.2183 38.2575 28.1193C40.0832 25.8698 37.0855 24.0721 35.9423 23.1918C34.78 22.2968 33.4823 21.7898 32.1667 21.6708M30.5 18.3375C32.8012 18.3375 34.6667 16.472 34.6667 14.1708C34.6667 11.8696 32.8012 10.0042 30.5 10.0042"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M5.87662 30.0041C4.62778 30.0041 3.63447 29.2183 2.7426 28.1193C0.916832 25.8698 3.91447 24.0721 5.05777 23.1918C6.21997 22.2968 7.51765 21.7898 8.83335 21.6708M9.66668 18.3375C7.3655 18.3375 5.50002 16.472 5.50002 14.1708C5.50002 11.8696 7.3655 10.0042 9.66668 10.0042"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M13.973 25.1894C12.2701 26.2424 7.805 28.3926 10.5245 31.0831C11.853 32.3974 13.3325 33.3374 15.1927 33.3374H25.8073C27.6675 33.3374 29.147 32.3974 30.4755 31.0831C33.195 28.3926 28.73 26.2424 27.027 25.1894C23.0335 22.7201 17.9665 22.7201 13.973 25.1894Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M26.3334 12.5042C26.3334 15.7259 23.7217 18.3376 20.5 18.3376C17.2784 18.3376 14.6667 15.7259 14.6667 12.5042C14.6667 9.28257 17.2784 6.6709 20.5 6.6709C23.7217 6.6709 26.3334 9.28257 26.3334 12.5042Z"
+                stroke="#737373"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+          <!-- stat count -->
+          <h4 class="text-4xl font-extrabold">30k+</h4>
+          <!-- stat text -->
+          <p>Our Happy Client</p>
+        </div>
+        <!-- stat 4 -->
+        <div
+          class="col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+        >
+          <!-- stat icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="40"
+              viewBox="0 0 41 40"
+              fill="none"
+            >
+              <path
+                d="M31.5268 33.3403H32.3438C34.2602 33.3403 35.7845 32.4672 37.1532 31.2463C40.63 28.1447 32.4568 25.007 29.6667 25.007M26.3333 8.45495C26.7118 8.37988 27.1048 8.34033 27.508 8.34033C30.5412 8.34033 33 10.5789 33 13.3403C33 16.1017 30.5412 18.3403 27.508 18.3403C27.1048 18.3403 26.7118 18.3008 26.3333 18.2257"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M7.96885 26.8591C6.0039 27.9121 0.851898 30.0622 3.9898 32.7527C5.52265 34.0671 7.22985 35.0071 9.3762 35.0071H21.6238C23.7702 35.0071 25.4773 34.0671 27.0102 32.7527C30.1482 30.0622 24.9962 27.9121 23.0312 26.8591C18.4233 24.3897 12.5767 24.3897 7.96885 26.8591Z"
+                stroke="#737373"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22.1667 12.507C22.1667 16.1889 19.1818 19.1737 15.5 19.1737C11.8181 19.1737 8.83334 16.1889 8.83334 12.507C8.83334 8.8251 11.8181 5.84033 15.5 5.84033C19.1818 5.84033 22.1667 8.8251 22.1667 12.507Z"
+                stroke="#737373"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+          <!-- stat count -->
+          <h4 class="text-4xl font-extrabold">307+</h4>
+          <!-- stat text -->
+          <p>Staff Members</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
