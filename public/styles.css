@@ -3136,6 +3136,18 @@ html{
     gap: 5rem;
   }
 
+  .md\:gap-16{
+    gap: 4rem;
+  }
+
+  .md\:gap-12{
+    gap: 3rem;
+  }
+
+  .md\:gap-10{
+    gap: 2.5rem;
+  }
+
   .md\:p-8{
     padding: 2rem;
   }
