@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         manrope: ['"Manrope", sans-serif'],
       },
+      backgroundImage: {
+        "contact-texture": "url('./public/images/bg.jpg')",
+      },
     },
   },
   plugins: [require("daisyui")],
