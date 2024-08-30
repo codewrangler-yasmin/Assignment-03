@@ -16,7 +16,7 @@
       <!-- navbar -->
       <nav class="p-5 md:py-10">
         <div class="navbar">
-          <div class="navbar-start">
+          <div class="navbar-start sm:w-4/12">
             <a href="" class="flex gap-4 items-center justify-center">
               <span
                 class="btn btn-circle border-none bg-neon-green text-black hover:bg-neon-green"
@@ -41,7 +41,7 @@
               >
             </a>
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden xl:flex">
             <ul class="menu menu-horizontal px-1">
               <li>
                 <a
@@ -80,8 +80,8 @@
               </li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <div class="dropdown">
+          <div class="navbar-end sm:w-8/12 xl:w-auto">
+            <div class="dropdown sm:hidden">
               <div
                 tabindex="0"
                 role="button"
@@ -169,7 +169,7 @@
                 </a>
               </div>
             </div>
-            <div class="hidden lg:flex gap-4">
+            <div class="hidden sm:flex gap-4">
               <!-- Search Button -->
               <button
                 class="btn btn-ghost btn-circle bg-white border border-gray-200 hover:bg-neon-green hover:border-neon-green"
@@ -210,11 +210,11 @@
               </button>
               <!-- Book Consult Button -->
               <a
-                class="btn bg-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
+                class="btn bg-neon-green md:px-5 md:py-2 h-auto rounded-full hover:bg-mono hover:text-white"
               >
                 <span class="font-extrabold text-lg">Book Consult</span>
                 <span
-                  class="btn btn-circle bg-black text-white border-none hover:bg-neon-green hover:text-mono"
+                  class="btn sm:btn-sm btn-circle bg-black text-white border-none hover:bg-neon-green hover:text-mono"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -232,6 +232,69 @@
                   </svg>
                 </span>
               </a>
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-circle btn-ghost xl:hidden border border-zinc-300 bg-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-5 w-5 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                        href=""
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                        href=""
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                        href=""
+                        >Blogs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-accent text-lg font-medium transition duration-300 hover:text-mono hover:bg-transparent active:text-mono hover:font-extrabold active:bg-transparent"
+                        href=""
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -240,7 +303,7 @@
       <section class="grid grid-cols-12 pb-10 md:pb-20">
         <!-- Banner Content -->
         <div
-          class="col-span-12 lg:col-start-2 lg:col-end-12 flex flex-col gap-y-6 items-center justify-center px-5"
+          class="col-span-12 sm:col-start-2 sm:col-end-12 flex flex-col gap-y-6 items-center justify-center px-5"
         >
           <!-- Banner Image -->
           <img
@@ -249,21 +312,23 @@
             alt=""
           />
           <!-- Banner Title -->
-          <h2 class="text-3xl lg:text-7xl font-black text-mono text-center">
+          <h2
+            class="text-3xl lg:text-5xl xl:text-7xl font-black text-mono text-center"
+          >
             A modern house of this design has a striking appearance
           </h2>
           <!-- Banner text -->
           <p
-            class="text-sm md:text-base text-center text-accent font-medium w-full lg:w-4/5"
+            class="text-sm sm:text-base text-center text-accent font-medium w-full lg:w-4/5"
           >
             Modern home design emphasizes clean lines and geometric shapes. No
             more are features such as arches, ornate columns, window shutters,
             or any outlandish ornamentation.
           </p>
           <!-- Banner Button -->
-          <div class="w-full md:w-auto">
+          <div class="w-full sm:w-auto">
             <button
-              class="btn btn-block bg-neon-green-light border border-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
+              class="btn btn-block btn- bg-neon-green-light border border-neon-green px-5 py-2 h-auto rounded-full hover:bg-mono hover:text-white"
             >
               <span class="font-extrabold text-lg">View Details</span>
               <!-- Banner Button Inner Circle -->
@@ -293,87 +358,95 @@
     <!-- About Us Container -->
     <section class="bg-zinc-200 py-10 md:py-20 px-5">
       <div class="container mx-auto grid grid-cols-12 gap-7 2xl:gap-10">
-        <!-- About Us Content -->
         <div
-          class="col-span-12 lg:col-span-6 2xl:col-start-2 2xl:col-end-7 flex flex-col gap-5"
+          class="col-span-12 lg:col-span-6 2xl:col-start-2 2xl:col-end-7 grid grid-cols-12"
         >
-          <!-- Top Arrow Image -->
-          <div class="hidden sm:relative">
-            <img
-              class="absolute -top-10 -left-14"
-              src="./public/images/wavy-arrow.png"
-              alt=""
-            />
-          </div>
-          <!-- Small About Us button -->
-          <div class="text-center md:text-left">
-            <a
-              class="btn bg-white border border-white pl-3 pr-4 h-auto rounded-full hover:bg-mono hover:text-white"
-            >
-              <span class="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-              <span class="text-base font-medi">About Us</span>
-            </a>
-          </div>
-          <!-- About Us Title -->
-          <h2
-            class="text-2xl md:text-5xl font-black text-mono font-manrope text-center md:text-left"
-          >
-            We design thoughtful, liveable spaces
-          </h2>
-          <!-- About Us text -->
-          <p
-            class="text-sm :md:text-base text-accent font-medium text-center md:text-left"
-          >
-            Good residential or commercial design ensures smooth flow and
-            connectivity between different areas of your home & workspace.
-          </p>
-          <!-- About Us Box 1 -->
-          <div
-            class="flex gap-5 items-start md:items-center bg-white rounded-xl p-6"
-          >
-            <img src="./public/images/commercial.png" alt="" />
-            <div>
-              <h3 class="text-lg font-extrabold">Commercial</h3>
-              <p>
-                The primary goal of any commercial building is to optimize a
-                business' ability to turn a profit, taking into account factors
-                that relate to comfort and physical space.
-              </p>
+          <!-- About Us Content -->
+          <div class="col-span-12 flex flex-col gap-5 pb-6">
+            <!-- Top Arrow Image -->
+            <div class="lg:relative">
+              <img
+                class="absolute -top-10 -left-14"
+                src="./public/images/wavy-arrow.png"
+                alt=""
+              />
             </div>
+            <!-- Small About Us button -->
+            <div class="text-center lg:text-left">
+              <a
+                class="btn bg-white border border-white pl-3 pr-4 h-auto rounded-full hover:bg-mono hover:text-white"
+              >
+                <span class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
+                <span class="text-base font-medi">About Us</span>
+              </a>
+            </div>
+            <!-- About Us Title -->
+            <h2
+              class="text-2xl md:text-3xl xl:text-5xl font-black text-mono font-manrope text-center lg:text-left"
+            >
+              We design thoughtful, liveable spaces
+            </h2>
+            <!-- About Us text -->
+            <p
+              class="text-sm md:text-base text-accent font-medium text-center lg:text-left"
+            >
+              Good residential or commercial design ensures smooth flow and
+              connectivity between different areas of your home & workspace.
+            </p>
           </div>
-          <!-- About Us Box 2 -->
-          <div
-            class="flex gap-5 items-start md:items-center bg-white rounded-xl p-6"
-          >
-            <img src="./public/images/residential.png" alt="" />
-            <div>
-              <h3 class="text-lg font-extrabold">Residential</h3>
-              <p>
-                Residential layouts should provide a safe and secure environment
-                by ensuring that car parks and footpaths, play areas and public
-                open spaces
-              </p>
+          <div class="col-span-12 grid grid-cols-12 gap-5">
+            <!-- About Us Box 1 -->
+            <div
+              class="col-span-12 sm:col-span-6 lg:col-span-12 flex gap-5 items-start lg:items-center bg-white rounded-xl p-6"
+            >
+              <img src="./public/images/commercial.png" alt="" />
+              <div>
+                <h3 class="text-lg font-extrabold">Commercial</h3>
+                <p>
+                  The primary goal of any commercial building is to optimize a
+                  business' ability to turn a profit, taking into account
+                  factors that relate to comfort and physical space.
+                </p>
+              </div>
+            </div>
+            <!-- About Us Box 2 -->
+            <div
+              class="col-span-12 sm:col-span-6 lg:col-span-12 flex gap-5 items-start lg:items-center bg-white rounded-xl p-6"
+            >
+              <img src="./public/images/residential.png" alt="" />
+              <div>
+                <h3 class="text-lg font-extrabold">Residential</h3>
+                <p>
+                  Residential layouts should provide a safe and secure
+                  environment by ensuring that car parks and footpaths, play
+                  areas and public open spaces
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <!-- About Us Image -->
         <div class="col-span-12 lg:col-span-6 2xl:col-start-7 2xl:col-end-12">
-          <img class="w-full" src="./public/images/featured.png" alt="" />
+          <img
+            class="w-full h-full"
+            src="./public/images/featured.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -384,7 +457,7 @@
       >
         <!-- stat 1 -->
         <div
-          class="col-span-12 md:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+          class="col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
         >
           <!-- stat icon -->
           <div>
@@ -417,7 +490,7 @@
         </div>
         <!-- stat 2 -->
         <div
-          class="col-span-12 md:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+          class="col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
         >
           <!-- stat icon -->
           <div>
@@ -449,7 +522,7 @@
         </div>
         <!-- stat 3 -->
         <div
-          class="col-span-12 md:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+          class="col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
         >
           <!-- stat icon -->
           <div>
@@ -493,7 +566,7 @@
         </div>
         <!-- stat 4 -->
         <div
-          class="col-span-12 md:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
+          class="col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col gap-3 items-center justify-center p-6"
         >
           <!-- stat icon -->
           <div>
@@ -533,7 +606,7 @@
     <section class="bg-zinc-200 px-5 pb-10 md:pb-20">
       <div class="container mx-auto grid grid-cols-12">
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-5 text-center"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 flex flex-col gap-5 text-center"
         >
           <!-- Small Work Progress Button -->
           <div>
@@ -560,7 +633,9 @@
             </a>
           </div>
           <!-- Work Progress Title -->
-          <h2 class="text-2xl md:text-5xl font-black text-mono font-manrope">
+          <h2
+            class="text-2xl md:text-3xl lg:text-5xl font-black text-mono font-manrope"
+          >
             Our Works Process
           </h2>
           <!-- Work Progress text -->
@@ -573,7 +648,7 @@
         <div class="col-span-12 grid grid-cols-12 pt-12 gap-5">
           <!-- Single Work Progress Box 1 -->
           <div
-            class="col-span-12 md:col-span-3 bg-[#E7C1D3] p-6 rounded-xl flex flex-col gap-4"
+            class="col-span-12 sm:col-span-6 lg:col-span-3 bg-[#E7C1D3] p-6 rounded-xl flex flex-col gap-4"
           >
             <img class="w-12 h-12" src="./public/images/concept.png" alt="" />
             <h4 class="text-lg font-extrabold">Concept</h4>
@@ -584,7 +659,7 @@
           </div>
           <!-- Single Work Progress Box 2 -->
           <div
-            class="col-span-12 md:col-span-3 bg-[#EFDA6E] p-6 rounded-xl flex flex-col gap-4"
+            class="col-span-12 sm:col-span-6 lg:col-span-3 bg-[#EFDA6E] p-6 rounded-xl flex flex-col gap-4"
           >
             <img
               class="w-12 h-12"
@@ -599,7 +674,7 @@
           </div>
           <!-- Single Work Progress Box 3 -->
           <div
-            class="col-span-12 md:col-span-3 bg-[#A4DAC3] p-6 rounded-xl flex flex-col gap-4"
+            class="col-span-12 sm:col-span-6 lg:col-span-3 bg-[#A4DAC3] p-6 rounded-xl flex flex-col gap-4"
           >
             <img class="w-12 h-12" src="./public/images/vision.png" alt="" />
             <h4 class="text-lg font-extrabold">Supervision</h4>
@@ -610,7 +685,7 @@
           </div>
           <!-- Single Work Progress Box 4 -->
           <div
-            class="col-span-12 md:col-span-3 bg-[#77AAEA] p-6 rounded-xl flex flex-col gap-4"
+            class="col-span-12 sm:col-span-6 lg:col-span-3 bg-[#77AAEA] p-6 rounded-xl flex flex-col gap-4"
           >
             <img
               class="w-12 h-12"
@@ -631,7 +706,7 @@
       <div class="container mx-auto grid grid-cols-12">
         <!--  Portfolio Content -->
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-5 text-center"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 flex flex-col gap-5 text-center pb-6"
         >
           <!-- Small Portfolio Button -->
           <div>
@@ -658,7 +733,9 @@
             </a>
           </div>
           <!-- Portfolio Title -->
-          <h2 class="text-2xl md:text-5xl font-black text-mono font-manrope">
+          <h2
+            class="text-2xl md:text-3xl lg:text-5xl font-black text-mono font-manrope"
+          >
             Our Latest Portfolio
           </h2>
           <!-- Portfolio text -->
@@ -670,9 +747,13 @@
         <div class="col-span-12 grid grid-cols-12 md:py-12 gap-5">
           <!-- Single Portfolio Item 1 -->
           <div
-            class="col-span-12 md:col-span-9 p-6 border border-slate-200 rounded-3xl flex flex-col md:flex-row gap-6"
+            class="col-span-12 lg:col-span-8 xl:col-span-9 p-6 border border-slate-200 rounded-3xl flex flex-col sm:flex-row gap-6"
           >
-            <img src="./public/images/img1.png" alt="" />
+            <img
+              class="w-full h-full sm:w-2/6 sm:h-auto"
+              src="./public/images/img1.png"
+              alt=""
+            />
             <div class="flex flex-col gap-4">
               <h4 class="text-xl font-extrabold">Commercial</h4>
               <p>
@@ -712,21 +793,25 @@
           </div>
           <!-- Single Portfolio Item 2 -->
           <div
-            class="col-span-12 md:col-span-3 p-6 border border-slate-200 rounded-3xl"
+            class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 p-6 border border-slate-200 rounded-3xl"
           >
-            <img src="./public/images/img2.png" alt="" />
+            <img class="w-full h-full" src="./public/images/img2.png" alt="" />
           </div>
           <!-- Single Portfolio Item 3 -->
           <div
-            class="col-span-12 md:col-span-3 p-6 border border-slate-200 rounded-3xl"
+            class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 p-6 border border-slate-200 rounded-3xl"
           >
-            <img class="w-full" src="./public/images/img3.png" alt="" />
+            <img class="w-full h-full" src="./public/images/img3.png" alt="" />
           </div>
           <!-- Single Portfolio Item 4 -->
           <div
-            class="col-span-12 md:col-span-6 p-6 border border-slate-200 rounded-3xl flex flex-col md:flex-row gap-6"
+            class="col-span-12 lg:col-span-8 xl:col-span-6 p-6 border border-slate-200 rounded-3xl flex flex-col sm:flex-row gap-6"
           >
-            <img src="./public/images/img4.png" alt="" />
+            <img
+              class="w-full h-full sm:w-2/6 sm:h-auto"
+              src="./public/images/img4.png"
+              alt=""
+            />
             <div class="flex flex-col gap-4">
               <h4 class="text-xl font-extrabold">Residential</h4>
               <p>
@@ -765,9 +850,15 @@
           </div>
           <!-- Single Portfolio Item 5 -->
           <div
-            class="col-span-12 md:col-span-3 p-6 border border-slate-200 rounded-3xl"
+            class="col-span-12 sm:col-span-6 xl:col-span-3 p-6 border border-slate-200 rounded-3xl"
           >
-            <img class="w-full" src="./public/images/img5.png" alt="" />
+            <img class="w-full h-full" src="./public/images/img5.png" alt="" />
+          </div>
+          <!-- Single Portfolio Item 6 -->
+          <div
+            class="col-span-12 sm:col-span-6 xl:hidden p-6 border border-slate-200 rounded-3xl"
+          >
+            <img class="w-full h-full" src="./public/images/img4.png" alt="" />
           </div>
         </div>
       </div>
@@ -777,7 +868,7 @@
       <div class="container mx-auto grid grid-cols-12 gap-6">
         <!--  News Blog Content -->
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-5 text-center pb-12"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 flex flex-col gap-5 text-center pb-12"
         >
           <!-- Small News Blog Button -->
           <div>
@@ -804,7 +895,9 @@
             </a>
           </div>
           <!-- News Blog Title -->
-          <h2 class="text-2xl md:text-5xl font-black text-mono font-manrope">
+          <h2
+            class="text-2xl md:text-3xl lg:text-5xl font-black text-mono font-manrope"
+          >
             Read Our Articles and News
           </h2>
           <!-- News Blog text -->
@@ -816,369 +909,387 @@
         </div>
         <!-- News card 1 -->
         <div
-          class="col-span-12 md:col-span-4 flex flex-col p-6 gap-4 rounded-3xl bg-white"
+          class="col-span-12 lg:col-span-4 flex flex-col sm:flex-row lg:flex-col p-6 gap-4 rounded-3xl bg-white"
         >
           <!-- News Card Image -->
-          <img src="./public/images/article1.png" alt="" />
-          <!-- News Card Info -->
-          <div class="flex gap-4">
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M18 2.46426V4.46426M6 2.46426V4.46426"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
-                    stroke="#737373"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 8.46426H20.5"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 8.46426H21"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span>July 14, 2024</span>
-            </p>
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <span>By Admin</span>
-            </p>
-          </div>
-          <!-- News Card Title -->
-          <h4 class="text-xl font-extrabold">
-            How to choose the right materials to build your home.
-          </h4>
-          <p>
-            The materials used to build a house play a very important role in
-            deciding the strength and durability of the house. The material cost
-            and quality...
-          </p>
-          <!-- News Button -->
-          <div>
-            <a
-              class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
-            >
-              <span class="font-extrabold text-lg">Read More</span>
-              <!-- News Button Inner Circle -->
-              <span
-                class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
+          <img
+            class="h-auto sm:w-2/6 md:w-auto"
+            src="./public/images/article1.png"
+            alt=""
+          />
+          <div class="flex flex-col gap-2">
+            <!-- News Card Info -->
+            <div class="flex gap-4">
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M18 2.46426V4.46426M6 2.46426V4.46426"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
+                      stroke="#737373"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 8.46426H20.5"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 8.46426H21"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>July 14, 2024</span>
+              </p>
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span>By Admin</span>
+              </p>
+            </div>
+            <!-- News Card Title -->
+            <h4 class="text-xl font-extrabold">
+              How to choose the right materials to build your home.
+            </h4>
+            <p>
+              The materials used to build a house play a very important role in
+              deciding the strength and durability of the house. The material
+              cost and quality...
+            </p>
+            <!-- News Button -->
+            <div>
+              <a
+                class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
+              >
+                <span class="font-extrabold text-lg">Read More</span>
+                <!-- News Button Inner Circle -->
+                <span
+                  class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
         <!-- News card 2 -->
         <div
-          class="col-span-12 md:col-span-4 flex flex-col p-6 gap-4 rounded-3xl bg-white"
+          class="col-span-12 lg:col-span-4 flex flex-col sm:flex-row lg:flex-col p-6 gap-4 rounded-3xl bg-white"
         >
           <!-- News Card Image -->
-          <img src="./public/images/article2.png" alt="" />
-          <!-- News Card Info -->
-          <div class="flex gap-4">
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M18 2.46426V4.46426M6 2.46426V4.46426"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
-                    stroke="#737373"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 8.46426H20.5"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 8.46426H21"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span>August 11, 2024</span>
-            </p>
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <span>By Admin</span>
-            </p>
-          </div>
-          <!-- News Card Title -->
-          <h4 class="text-xl font-extrabold">
-            Take A Look At Our New Design Packages and Pricing.
-          </h4>
-          <p>
-            A Decade Plus of Designing Excellence We’ve been proudly
-            transforming spaces and creating functional and stylish design for
-            12 years now, and...
-          </p>
-          <!-- News Button -->
-          <div>
-            <a
-              class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
-            >
-              <span class="font-extrabold text-lg">Read More</span>
-              <!-- News Button Inner Circle -->
-              <span
-                class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
+          <img
+            class="h-auto sm:w-2/6 md:w-auto"
+            src="./public/images/article2.png"
+            alt=""
+          />
+          <div class="flex flex-col gap-2">
+            <!-- News Card Info -->
+            <div class="flex gap-4">
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M18 2.46426V4.46426M6 2.46426V4.46426"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
+                      stroke="#737373"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 8.46426H20.5"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 8.46426H21"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>August 11, 2024</span>
+              </p>
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span>By Admin</span>
+              </p>
+            </div>
+            <!-- News Card Title -->
+            <h4 class="text-xl font-extrabold">
+              Take A Look At Our New Design Packages and Pricing.
+            </h4>
+            <p>
+              A Decade Plus of Designing Excellence We’ve been proudly
+              transforming spaces and creating functional and stylish design for
+              12 years now, and...
+            </p>
+            <!-- News Button -->
+            <div>
+              <a
+                class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
+              >
+                <span class="font-extrabold text-lg">Read More</span>
+                <!-- News Button Inner Circle -->
+                <span
+                  class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
         <!-- News card 3 -->
         <div
-          class="col-span-12 md:col-span-4 flex flex-col p-6 gap-4 rounded-3xl bg-white"
+          class="col-span-12 lg:col-span-4 flex flex-col sm:flex-row lg:flex-col p-6 gap-4 rounded-3xl bg-white"
         >
           <!-- News Card Image -->
-          <img src="./public/images/article3.png" alt="" />
-          <!-- News Card Info -->
-          <div class="flex gap-4">
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M18 2.46426V4.46426M6 2.46426V4.46426"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
-                    stroke="#737373"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 8.46426H20.5"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 8.46426H21"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span>August 31, 2024</span>
-            </p>
-            <p
-              class="flex gap-2 items-center justify-center text-gray-400 text-sm"
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
-                    stroke="#737373"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <span>By Admin</span>
-            </p>
-          </div>
-          <!-- News Card Title -->
-          <h4 class="text-xl font-extrabold">
-            The Pros and Cons of Owner <br />
-            Builder Designs
-          </h4>
-          <p>
-            To owner build or not to owner build? The great dilemma! In a world
-            where DIY culture is thriving and the price of building materials is
-            skyrocketing...
-          </p>
-          <!-- News Button -->
-          <div>
-            <a
-              class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
-            >
-              <span class="font-extrabold text-lg">Read More</span>
-              <!-- News Button Inner Circle -->
-              <span
-                class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
+          <img
+            class="h-auto sm:w-2/6 md:w-auto"
+            src="./public/images/article3.png"
+            alt=""
+          />
+          <div class="flex flex-col gap-3">
+            <!-- News Card Info -->
+            <div class="flex gap-4">
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M18 2.46426V4.46426M6 2.46426V4.46426"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.9955 13.4643H12.0045M11.9955 17.4643H12.0045M15.991 13.4643H16M8 13.4643H8.00897M8 17.4643H8.00897"
+                      stroke="#737373"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 8.46426H20.5"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 12.7075C2.5 8.3502 2.5 6.17154 3.75212 4.8179C5.00424 3.46426 7.01949 3.46426 11.05 3.46426H12.95C16.9805 3.46426 18.9958 3.46426 20.2479 4.8179C21.5 6.17154 21.5 8.3502 21.5 12.7075V13.2211C21.5 17.5784 21.5 19.757 20.2479 21.1107C18.9958 22.4643 16.9805 22.4643 12.95 22.4643H11.05C7.01949 22.4643 5.00424 22.4643 3.75212 21.1107C2.5 19.757 2.5 17.5784 2.5 13.2211V12.7075Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 8.46426H21"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>August 31, 2024</span>
+              </p>
+              <p
+                class="flex gap-2 items-center justify-center text-gray-400 text-sm"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.0063 22.4643C17.5292 22.4643 22.0063 17.9871 22.0063 12.4643C22.0063 6.94142 17.5292 2.46426 12.0063 2.46426C6.4835 2.46426 2.00635 6.94142 2.00635 12.4643C2.00635 17.9871 6.4835 22.4643 12.0063 22.4643Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.50635 17.4643C9.83805 15.0221 14.1495 14.9071 16.5063 17.4643M14.5014 9.96426C14.5014 11.345 13.3805 12.4643 11.9978 12.4643C10.6152 12.4643 9.49432 11.345 9.49432 9.96426C9.49432 8.58355 10.6152 7.46426 11.9978 7.46426C13.3805 7.46426 14.5014 8.58355 14.5014 9.96426Z"
+                      stroke="#737373"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span>By Admin</span>
+              </p>
+            </div>
+            <!-- News Card Title -->
+            <h4 class="text-xl font-extrabold">
+              The Pros and Cons of Owner <br />
+              Builder Designs
+            </h4>
+            <p>
+              To owner build or not to owner build? The great dilemma! In a
+              world where DIY culture is thriving and the price of building
+              materials is skyrocketing...
+            </p>
+            <!-- News Button -->
+            <div>
+              <a
+                class="btn h-auto bg-transparent hover:bg-transparent border-0 shadow-none p-0"
+              >
+                <span class="font-extrabold text-lg">Read More</span>
+                <!-- News Button Inner Circle -->
+                <span
+                  class="btn btn-circle bg-neon-green text-mono hover:bg-neon-green"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1188,7 +1299,7 @@
       <div class="container mx-auto grid grid-cols-12 gap-8">
         <!--  News Testimonial Content -->
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-5 text-center pb-20 relative"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 flex flex-col gap-5 text-center pb-20 relative"
         >
           <!-- Small Testimonial Button -->
           <div>
@@ -1215,7 +1326,9 @@
             </a>
           </div>
           <!-- Testimonial Title -->
-          <h2 class="text-2xl md:text-5xl font-black text-mono font-manrope">
+          <h2
+            class="text-2xl md:text-3xl lg:text-5xl font-black text-mono font-manrope"
+          >
             Clients Feedback
           </h2>
           <!-- Testimonial text -->
@@ -1226,7 +1339,7 @@
         </div>
         <!-- Single Testimonial Box 1 -->
         <div
-          class="col-span-12 md:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg mb-16 md:mb-0"
+          class="col-span-12 sm:col-span-6 lg:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg mb-16 md:mb-0"
         >
           <div class="avatar mx-auto -mt-20">
             <div
@@ -1281,7 +1394,7 @@
         </div>
         <!-- Single Testimonial Box 2 -->
         <div
-          class="col-span-12 md:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg mb-16 md:mb-0"
+          class="col-span-12 sm:col-span-6 lg:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg mb-16 md:mb-0"
         >
           <div class="avatar mx-auto -mt-20">
             <div
@@ -1336,7 +1449,7 @@
         </div>
         <!-- Single Testimonial Box 3 -->
         <div
-          class="col-span-12 md:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg"
+          class="col-span-12 lg:col-span-4 rounded-3xl p-6 flex flex-col gap-6 bg-white border border-zinc-200 shadow-lg md:mt-16 lg:mt-0"
         >
           <div class="avatar mx-auto -mt-20">
             <div
@@ -1402,7 +1515,7 @@
     >
       <div class="container mx-auto grid grid-cols-12">
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-5 pb-12"
+          class="col-span-12 xl:col-start-4 xl:col-end-10 flex flex-col gap-5 pb-12"
         >
           <!-- Small Contact Form Button -->
           <div class="text-center">
@@ -1430,7 +1543,7 @@
           </div>
           <!-- Contact Form Title -->
           <h2
-            class="text-2xl md:text-5xl text-center font-black text-mono font-manrope"
+            class="text-2xl md:text-3xl lg:text-5xl text-center font-black text-mono font-manrope"
           >
             Let’s Discuss Next Project
           </h2>
@@ -1441,10 +1554,10 @@
         </div>
         <!-- Contact Form Fields -->
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 grid grid-cols-12 gap-6"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 grid grid-cols-12 gap-6"
         >
           <!-- First Name Box -->
-          <div class="col-span-12 md:col-span-6">
+          <div class="col-span-12 sm:col-span-6">
             <input
               type="text"
               placeholder="First name*"
@@ -1453,7 +1566,7 @@
             />
           </div>
           <!-- Last Name Box -->
-          <div class="col-span-12 md:col-span-6">
+          <div class="col-span-12 sm:col-span-6">
             <input
               type="text"
               placeholder="Last name*"
@@ -1462,7 +1575,7 @@
             />
           </div>
           <!-- Phone Number Box -->
-          <div class="col-span-12 md:col-span-6">
+          <div class="col-span-12 sm:col-span-6">
             <input
               type="number"
               placeholder="Phone Number*"
@@ -1471,7 +1584,7 @@
             />
           </div>
           <!-- Email Address Box -->
-          <div class="col-span-12 md:col-span-6">
+          <div class="col-span-12 sm:col-span-6">
             <input
               type="email"
               placeholder="Email Address*"
@@ -1519,7 +1632,7 @@
     <footer class="bg-mono px-5 py-10 md:py-20">
       <div class="container mx-auto grid grid-cols-12">
         <div
-          class="col-span-12 md:col-start-4 md:col-end-10 flex flex-col gap-6 justify-center items-center"
+          class="col-span-12 lg:col-start-3 lg:col-end-11 xl:col-start-4 xl:col-end-10 flex flex-col gap-6 justify-center items-center"
         >
           <div>
             <a href="" class="flex gap-4 items-center justify-center">
@@ -1552,7 +1665,7 @@
             and experienced team today.
           </p>
           <ul
-            class="text-center menu menu-vertical md:menu-horizontal items-center gap-6 md:gap-10 text-stone-200"
+            class="text-center menu menu-vertical sm:menu-horizontal items-center gap-6 md:gap-10 text-stone-200"
           >
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
@@ -1561,7 +1674,7 @@
             <li><a href="">Contact Us</a></li>
           </ul>
           <a
-            class="btn bg-neon-green px-5 py-2 w-full md:w-auto h-auto rounded-full border-none hover:bg-white hover:text-mono"
+            class="btn bg-neon-green px-5 py-2 w-full sm:w-auto h-auto rounded-full border-none hover:bg-white hover:text-mono"
           >
             <span class="font-extrabold text-lg">Book Consult</span>
             <span
